@@ -1,0 +1,159 @@
+2026-11-09 16:22:34,775 | INFO | operation=startup | Software FJ management system started. | error_type=-
+2026-11-10 22:01:05,213 | INFO | operation=startup | Software FJ management system started. | error_type=-
+2026-11-10 22:29:44,321 | INFO | operation=startup | Software FJ management system started. | error_type=-
+2026-11-10 22:30:21,674 | ERROR | operation=register_customer | Enter a valid email address. | error_type=InvalidCustomerError
+2026-11-10 22:30:33,537 | INFO | operation=register_customer | Customer registered: 10709852155. | error_type=-
+2026-11-10 22:30:33,537 | INFO | operation=register_customer | Customer registration attempt completed. | error_type=-
+2026-11-10 22:30:54,522 | INFO | operation=startup | Software FJ management system started. | error_type=-
+2026-11-10 22:30:54,522 | INFO | operation=register_customer | Customer registered: C-001. | error_type=-
+2026-11-10 22:30:54,522 | INFO | operation=register_customer | Customer registration attempt completed. | error_type=-
+2026-11-10 22:30:54,522 | INFO | operation=demo:Register first customer | Scenario result: SUCCESSFUL. | error_type=-
+2026-11-10 22:30:54,522 | INFO | operation=demo:Register first customer | Scenario execution finished. | error_type=-
+2026-11-10 22:30:54,522 | INFO | operation=register_customer | Customer registered: C-002. | error_type=-
+2026-11-10 22:30:54,522 | INFO | operation=register_customer | Customer registration attempt completed. | error_type=-
+2026-11-10 22:30:54,522 | INFO | operation=demo:Register second customer | Scenario result: SUCCESSFUL. | error_type=-
+2026-11-10 22:30:54,522 | INFO | operation=demo:Register second customer | Scenario execution finished. | error_type=-
+2026-11-10 22:30:54,523 | ERROR | operation=register_customer | A customer with this identifier, document, or email already exists. | error_type=DuplicateCustomerError
+2026-11-10 22:30:54,523 | INFO | operation=register_customer | Customer registration attempt completed. | error_type=-
+2026-11-10 22:30:54,523 | WARNING | operation=demo:Reject duplicate customer | Controlled DuplicateCustomerError: A customer with this identifier, document, or email already exists. | error_type=DuplicateCustomerError
+2026-11-10 22:30:54,523 | INFO | operation=demo:Reject duplicate customer | Scenario execution finished. | error_type=-
+2026-11-10 22:30:54,523 | WARNING | operation=demo:Reject invalid email | Controlled InvalidCustomerError: Enter a valid email address. | error_type=InvalidCustomerError
+2026-11-10 22:30:54,523 | INFO | operation=demo:Reject invalid email | Scenario execution finished. | error_type=-
+2026-11-10 22:30:54,523 | INFO | operation=create_service | Service created: S-ROOM. | error_type=-
+2026-11-10 22:30:54,526 | INFO | operation=demo:Create room service | Scenario result: SUCCESSFUL. | error_type=-
+2026-11-10 22:30:54,526 | INFO | operation=demo:Create room service | Scenario execution finished. | error_type=-
+2026-11-10 22:30:54,526 | INFO | operation=create_service | Service created: S-EQUIP. | error_type=-
+2026-11-10 22:30:54,526 | INFO | operation=demo:Create equipment service | Scenario result: SUCCESSFUL. | error_type=-
+2026-11-10 22:30:54,526 | INFO | operation=demo:Create equipment service | Scenario execution finished. | error_type=-
+2026-11-10 22:30:54,526 | INFO | operation=create_service | Service created: S-CONSULT. | error_type=-
+2026-11-10 22:30:54,527 | INFO | operation=demo:Create consulting service | Scenario result: SUCCESSFUL. | error_type=-
+2026-11-10 22:30:54,527 | INFO | operation=demo:Create consulting service | Scenario execution finished. | error_type=-
+2026-11-10 22:30:54,527 | WARNING | operation=demo:Reject invalid service parameters | Controlled CalculationError: The service rate must be a positive finite number. | error_type=CalculationError
+2026-11-10 22:30:54,527 | INFO | operation=demo:Reject invalid service parameters | Scenario execution finished. | error_type=-
+2026-11-10 22:30:54,527 | INFO | operation=create_reservation | Reservation created: R-main. | error_type=-
+2026-11-10 22:30:54,527 | INFO | operation=demo:Create reservation | Scenario result: SUCCESSFUL. | error_type=-
+2026-11-10 22:30:54,527 | INFO | operation=demo:Create reservation | Scenario execution finished. | error_type=-
+2026-11-10 22:30:54,527 | INFO | operation=confirm_reservation | Reservation confirmed: R-main. | error_type=-
+2026-11-10 22:30:54,527 | INFO | operation=demo:Confirm reservation | Scenario result: SUCCESSFUL. | error_type=-
+2026-11-10 22:30:54,527 | INFO | operation=demo:Confirm reservation | Scenario execution finished. | error_type=-
+2026-11-10 22:30:54,527 | INFO | operation=cancel_reservation | Reservation cancelled: R-main. | error_type=-
+2026-11-10 22:30:54,527 | INFO | operation=demo:Cancel reservation | Scenario result: SUCCESSFUL. | error_type=-
+2026-11-10 22:30:54,527 | INFO | operation=demo:Cancel reservation | Scenario execution finished. | error_type=-
+2026-11-10 22:30:54,527 | INFO | operation=create_service | Service created: S-OFF. | error_type=-
+2026-11-10 22:30:54,529 | ERROR | operation=create_reservation | Service S-OFF is unavailable. | error_type=ServiceUnavailableError
+2026-11-10 22:30:54,529 | WARNING | operation=demo:Reject unavailable service | Controlled ServiceUnavailableError: Service S-OFF is unavailable. | error_type=ServiceUnavailableError
+2026-11-10 22:30:54,529 | INFO | operation=demo:Reject unavailable service | Scenario execution finished. | error_type=-
+2026-11-10 22:30:54,529 | WARNING | operation=demo:Reject invalid reservation | Controlled InvalidReservationError: Duration must be a positive finite number. | error_type=InvalidReservationError
+2026-11-10 22:30:54,529 | INFO | operation=demo:Reject invalid reservation | Scenario execution finished. | error_type=-
+2026-11-10 22:30:54,529 | INFO | operation=demo:Calculate cost with tax | Scenario result: SUCCESSFUL. | error_type=-
+2026-11-10 22:30:54,529 | INFO | operation=demo:Calculate cost with tax | Scenario execution finished. | error_type=-
+2026-11-10 22:30:54,529 | INFO | operation=demo:Calculate cost with discount | Scenario result: SUCCESSFUL. | error_type=-
+2026-11-10 22:30:54,530 | INFO | operation=demo:Calculate cost with discount | Scenario execution finished. | error_type=-
+2026-11-10 22:32:21,641 | INFO | operation=create_service | Service created: 123456. | error_type=-
+2026-11-10 23:36:37,581 | INFO | operation=startup | Software FJ management system started. | error_type=-
+2026-11-10 23:38:41,479 | INFO | operation=register_customer | Customer registered: 0001. | error_type=-
+2026-11-10 23:38:41,479 | INFO | operation=register_customer | Customer registration attempt completed. | error_type=-
+2026-11-10 23:39:18,239 | INFO | operation=create_service | Service created: 001. | error_type=-
+2026-11-10 23:39:49,823 | ERROR | operation=create_reservation | Date must use the YYYY-MM-DD format. | error_type=InvalidReservationError
+2026-11-10 23:40:06,510 | ERROR | operation=create_reservation | Date must use the YYYY-MM-DD format. | error_type=InvalidReservationError
+2026-11-10 23:40:19,438 | ERROR | operation=create_reservation | Date must use the YYYY-MM-DD format. | error_type=InvalidReservationError
+2026-11-10 23:40:29,767 | ERROR | operation=create_reservation | could not convert string to float: '' | error_type=ValueError
+2026-11-10 23:40:37,030 | ERROR | operation=confirm_reservation | Select a reservation from the table first. | error_type=ValueError
+2026-11-10 23:40:56,878 | ERROR | operation=create_reservation | A reservation identifier is required. | error_type=InvalidReservationError
+2026-11-10 23:41:03,958 | INFO | operation=create_reservation | Reservation created: 0001. | error_type=-
+2026-11-10 23:41:24,382 | INFO | operation=cancel_reservation | Reservation cancelled: 0001. | error_type=-
+2026-11-10 23:41:28,479 | ERROR | operation=cancel_reservation | This reservation is already cancelled. | error_type=OperationNotAllowedError
+2026-11-10 23:41:28,479 | ERROR | operation=cancel_reservation | This reservation is already cancelled. | error_type=OperationNotAllowedError
+2026-11-10 23:44:27,870 | INFO | operation=create_reservation | Reservation created: 0002. | error_type=-
+2026-11-10 23:44:31,326 | INFO | operation=confirm_reservation | Reservation confirmed: 0002. | error_type=-
+2026-11-10 23:46:11,382 | INFO | operation=startup | Software FJ management system started. | error_type=-
+2026-11-10 23:46:11,382 | INFO | operation=register_customer | Customer registered: C-001. | error_type=-
+2026-11-10 23:46:11,382 | INFO | operation=register_customer | Customer registration attempt completed. | error_type=-
+2026-11-10 23:46:11,382 | INFO | operation=demo:Register first customer | Scenario result: SUCCESSFUL. | error_type=-
+2026-11-10 23:46:11,383 | INFO | operation=demo:Register first customer | Scenario execution finished. | error_type=-
+2026-11-10 23:46:11,383 | INFO | operation=register_customer | Customer registered: C-002. | error_type=-
+2026-11-10 23:46:11,383 | INFO | operation=register_customer | Customer registration attempt completed. | error_type=-
+2026-11-10 23:46:11,383 | INFO | operation=demo:Register second customer | Scenario result: SUCCESSFUL. | error_type=-
+2026-11-10 23:46:11,383 | INFO | operation=demo:Register second customer | Scenario execution finished. | error_type=-
+2026-11-10 23:46:11,383 | ERROR | operation=register_customer | A customer with this identifier, document, or email already exists. | error_type=DuplicateCustomerError
+2026-11-10 23:46:11,383 | INFO | operation=register_customer | Customer registration attempt completed. | error_type=-
+2026-11-10 23:46:11,383 | WARNING | operation=demo:Reject duplicate customer | Controlled DuplicateCustomerError: A customer with this identifier, document, or email already exists. | error_type=DuplicateCustomerError
+2026-11-10 23:46:11,383 | INFO | operation=demo:Reject duplicate customer | Scenario execution finished. | error_type=-
+2026-11-10 23:46:11,383 | WARNING | operation=demo:Reject invalid email | Controlled InvalidCustomerError: Enter a valid email address. | error_type=InvalidCustomerError
+2026-11-10 23:46:11,383 | INFO | operation=demo:Reject invalid email | Scenario execution finished. | error_type=-
+2026-11-10 23:46:11,383 | INFO | operation=create_service | Service created: S-ROOM. | error_type=-
+2026-11-10 23:46:11,383 | INFO | operation=demo:Create room service | Scenario result: SUCCESSFUL. | error_type=-
+2026-11-10 23:46:11,383 | INFO | operation=demo:Create room service | Scenario execution finished. | error_type=-
+2026-11-10 23:46:11,383 | INFO | operation=create_service | Service created: S-EQUIP. | error_type=-
+2026-11-10 23:46:11,383 | INFO | operation=demo:Create equipment service | Scenario result: SUCCESSFUL. | error_type=-
+2026-11-10 23:46:11,383 | INFO | operation=demo:Create equipment service | Scenario execution finished. | error_type=-
+2026-11-10 23:46:11,383 | INFO | operation=create_service | Service created: S-CONSULT. | error_type=-
+2026-11-10 23:46:11,383 | INFO | operation=demo:Create consulting service | Scenario result: SUCCESSFUL. | error_type=-
+2026-11-10 23:46:11,383 | INFO | operation=demo:Create consulting service | Scenario execution finished. | error_type=-
+2026-11-10 23:46:11,383 | WARNING | operation=demo:Reject invalid service parameters | Controlled CalculationError: The service rate must be a positive finite number. | error_type=CalculationError
+2026-11-10 23:46:11,383 | INFO | operation=demo:Reject invalid service parameters | Scenario execution finished. | error_type=-
+2026-11-10 23:46:11,384 | INFO | operation=create_reservation | Reservation created: R-main. | error_type=-
+2026-11-10 23:46:11,384 | INFO | operation=demo:Create reservation | Scenario result: SUCCESSFUL. | error_type=-
+2026-11-10 23:46:11,384 | INFO | operation=demo:Create reservation | Scenario execution finished. | error_type=-
+2026-11-10 23:46:11,384 | INFO | operation=confirm_reservation | Reservation confirmed: R-main. | error_type=-
+2026-11-10 23:46:11,384 | INFO | operation=demo:Confirm reservation | Scenario result: SUCCESSFUL. | error_type=-
+2026-11-10 23:46:11,384 | INFO | operation=demo:Confirm reservation | Scenario execution finished. | error_type=-
+2026-11-10 23:46:11,384 | INFO | operation=cancel_reservation | Reservation cancelled: R-main. | error_type=-
+2026-11-10 23:46:11,384 | INFO | operation=demo:Cancel reservation | Scenario result: SUCCESSFUL. | error_type=-
+2026-11-10 23:46:11,384 | INFO | operation=demo:Cancel reservation | Scenario execution finished. | error_type=-
+2026-11-10 23:46:11,384 | INFO | operation=create_service | Service created: S-OFF. | error_type=-
+2026-11-10 23:46:11,384 | ERROR | operation=create_reservation | Service S-OFF is unavailable. | error_type=ServiceUnavailableError
+2026-11-10 23:46:11,384 | WARNING | operation=demo:Reject unavailable service | Controlled ServiceUnavailableError: Service S-OFF is unavailable. | error_type=ServiceUnavailableError
+2026-11-10 23:46:11,384 | INFO | operation=demo:Reject unavailable service | Scenario execution finished. | error_type=-
+2026-11-10 23:46:11,384 | WARNING | operation=demo:Reject invalid reservation | Controlled InvalidReservationError: Duration must be a positive finite number. | error_type=InvalidReservationError
+2026-11-10 23:46:11,384 | INFO | operation=demo:Reject invalid reservation | Scenario execution finished. | error_type=-
+2026-11-10 23:46:11,384 | INFO | operation=demo:Calculate cost with tax | Scenario result: SUCCESSFUL. | error_type=-
+2026-11-10 23:46:11,384 | INFO | operation=demo:Calculate cost with tax | Scenario execution finished. | error_type=-
+2026-11-10 23:46:11,384 | INFO | operation=demo:Calculate cost with discount | Scenario result: SUCCESSFUL. | error_type=-
+2026-11-10 23:46:11,384 | INFO | operation=demo:Calculate cost with discount | Scenario execution finished. | error_type=-
+2026-11-10 23:46:44,544 | INFO | operation=reset_simulation | Simulation results reset; customer, service, and reservation data were preserved. | error_type=-
+2026-11-10 23:46:49,591 | INFO | operation=startup | Software FJ management system started. | error_type=-
+2026-11-10 23:46:49,591 | INFO | operation=register_customer | Customer registered: C-001. | error_type=-
+2026-11-10 23:46:49,591 | INFO | operation=register_customer | Customer registration attempt completed. | error_type=-
+2026-11-10 23:46:49,591 | INFO | operation=demo:Register first customer | Scenario result: SUCCESSFUL. | error_type=-
+2026-11-10 23:46:49,591 | INFO | operation=demo:Register first customer | Scenario execution finished. | error_type=-
+2026-11-10 23:46:49,591 | INFO | operation=register_customer | Customer registered: C-002. | error_type=-
+2026-11-10 23:46:49,591 | INFO | operation=register_customer | Customer registration attempt completed. | error_type=-
+2026-11-10 23:46:49,591 | INFO | operation=demo:Register second customer | Scenario result: SUCCESSFUL. | error_type=-
+2026-11-10 23:46:49,591 | INFO | operation=demo:Register second customer | Scenario execution finished. | error_type=-
+2026-11-10 23:46:49,591 | ERROR | operation=register_customer | A customer with this identifier, document, or email already exists. | error_type=DuplicateCustomerError
+2026-11-10 23:46:49,591 | INFO | operation=register_customer | Customer registration attempt completed. | error_type=-
+2026-11-10 23:46:49,591 | WARNING | operation=demo:Reject duplicate customer | Controlled DuplicateCustomerError: A customer with this identifier, document, or email already exists. | error_type=DuplicateCustomerError
+2026-11-10 23:46:49,591 | INFO | operation=demo:Reject duplicate customer | Scenario execution finished. | error_type=-
+2026-11-10 23:46:49,591 | WARNING | operation=demo:Reject invalid email | Controlled InvalidCustomerError: Enter a valid email address. | error_type=InvalidCustomerError
+2026-11-10 23:46:49,591 | INFO | operation=demo:Reject invalid email | Scenario execution finished. | error_type=-
+2026-11-10 23:46:49,591 | INFO | operation=create_service | Service created: S-ROOM. | error_type=-
+2026-11-10 23:46:49,592 | INFO | operation=demo:Create room service | Scenario result: SUCCESSFUL. | error_type=-
+2026-11-10 23:46:49,592 | INFO | operation=demo:Create room service | Scenario execution finished. | error_type=-
+2026-11-10 23:46:49,592 | INFO | operation=create_service | Service created: S-EQUIP. | error_type=-
+2026-11-10 23:46:49,592 | INFO | operation=demo:Create equipment service | Scenario result: SUCCESSFUL. | error_type=-
+2026-11-10 23:46:49,592 | INFO | operation=demo:Create equipment service | Scenario execution finished. | error_type=-
+2026-11-10 23:46:49,592 | INFO | operation=create_service | Service created: S-CONSULT. | error_type=-
+2026-11-10 23:46:49,592 | INFO | operation=demo:Create consulting service | Scenario result: SUCCESSFUL. | error_type=-
+2026-11-10 23:46:49,592 | INFO | operation=demo:Create consulting service | Scenario execution finished. | error_type=-
+2026-11-10 23:46:49,592 | WARNING | operation=demo:Reject invalid service parameters | Controlled CalculationError: The service rate must be a positive finite number. | error_type=CalculationError
+2026-11-10 23:46:49,592 | INFO | operation=demo:Reject invalid service parameters | Scenario execution finished. | error_type=-
+2026-11-10 23:46:49,592 | INFO | operation=create_reservation | Reservation created: R-main. | error_type=-
+2026-11-10 23:46:49,592 | INFO | operation=demo:Create reservation | Scenario result: SUCCESSFUL. | error_type=-
+2026-11-10 23:46:49,592 | INFO | operation=demo:Create reservation | Scenario execution finished. | error_type=-
+2026-11-10 23:46:49,592 | INFO | operation=confirm_reservation | Reservation confirmed: R-main. | error_type=-
+2026-11-10 23:46:49,592 | INFO | operation=demo:Confirm reservation | Scenario result: SUCCESSFUL. | error_type=-
+2026-11-10 23:46:49,592 | INFO | operation=demo:Confirm reservation | Scenario execution finished. | error_type=-
+2026-11-10 23:46:49,592 | INFO | operation=cancel_reservation | Reservation cancelled: R-main. | error_type=-
+2026-11-10 23:46:49,592 | INFO | operation=demo:Cancel reservation | Scenario result: SUCCESSFUL. | error_type=-
+2026-11-10 23:46:49,592 | INFO | operation=demo:Cancel reservation | Scenario execution finished. | error_type=-
+2026-11-10 23:46:49,592 | INFO | operation=create_service | Service created: S-OFF. | error_type=-
+2026-11-10 23:46:49,592 | ERROR | operation=create_reservation | Service S-OFF is unavailable. | error_type=ServiceUnavailableError
+2026-11-10 23:46:49,592 | WARNING | operation=demo:Reject unavailable service | Controlled ServiceUnavailableError: Service S-OFF is unavailable. | error_type=ServiceUnavailableError
+2026-11-10 23:46:49,592 | INFO | operation=demo:Reject unavailable service | Scenario execution finished. | error_type=-
+2026-11-10 23:46:49,592 | WARNING | operation=demo:Reject invalid reservation | Controlled InvalidReservationError: Duration must be a positive finite number. | error_type=InvalidReservationError
+2026-11-10 23:46:49,593 | INFO | operation=demo:Reject invalid reservation | Scenario execution finished. | error_type=-
+2026-11-10 23:46:49,593 | INFO | operation=demo:Calculate cost with tax | Scenario result: SUCCESSFUL. | error_type=-
+2026-11-10 23:46:49,593 | INFO | operation=demo:Calculate cost with tax | Scenario execution finished. | error_type=-
+2026-11-10 23:46:49,593 | INFO | operation=demo:Calculate cost with discount | Scenario result: SUCCESSFUL. | error_type=-
+2026-11-10 23:46:49,593 | INFO | operation=demo:Calculate cost with discount | Scenario execution finished. | error_type=-
